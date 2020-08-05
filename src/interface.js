@@ -1,5 +1,13 @@
 $(document).ready(function() {
   var thermostat = new Thermostat();
+  $('#select-city').submit(function(event) {
+  event.preventDefault();
+  var city = $('#current-city').val();
+    $.get('http://api.openweathermap.org/data/2.5/weather?q=' + city + '&appid=956907c99b6ba492eb9a4e3580b7c3c2&units=metric', function(data){
+      $('#display-city').text(city);
+      $('#current-temperature').text(data.main.temp);
+    });
+  });
   updateTemperature();
 
   $('#temperature-up').on('click', function() {
