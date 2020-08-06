@@ -1,0 +1,127 @@
+h1 {
+  height: 100px;
+  text-align: center;
+  font-size: 150px;
+  font-family: optima; 
+  box-sizing: border-box;
+  padding: .1rem .1rem;
+  border-radius: 1rem; 
+  margin-top: 40px;
+  margin-bottom: 100px;
+}
+section {
+  text-align: center;
+}
+
+button {
+  display: inline-block;
+  padding: .75rem 1.25rem;
+  border-radius: 10rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: .15rem;
+  transition: all .3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+button:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0cf;
+  border-radius: 10rem;
+  z-index: -2;
+}
+button:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #008fb3;
+  transition: all .3s;
+  border-radius: 10rem;
+  z-index: -1;
+}
+button:hover {
+  color: #fff;
+}
+button:hover:before {
+  width: 100%;
+}
+
+h4 {
+  font-family: optima;
+  font-style: italic;
+  height: 6px;
+}
+
+h3 {
+  font-family: optima;
+}
+
+body {
+  background-image: url("/Users/student/Downloads/cool-background.png")
+}
+
+.searchBox {
+  position: absolute;
+  top: 84%;
+  left: 50%;
+  transform:  translate(-50%,50%);
+  background: #2f3640;
+  height: 40px;
+  border-radius: 40px;
+  padding: 10px;
+
+}
+
+.searchBox:hover > .searchInput {
+  width: 240px;
+  padding: 0 6px;
+}
+
+.searchBox:hover > .searchButton {
+background: white;
+color : #2f3640;
+}
+
+.searchButton {
+  color: white;
+  float: right;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #2f3640;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+}
+
+.searchInput {
+  border:none;
+  background: none;
+  outline:none;
+  float:left;
+  padding: 0;
+  color: white;
+  font-size: 16px;
+  transition: 0.4s;
+  line-height: 40px;
+  width: 0px;
+
+}
+
+@media screen and (max-width: 620px) {
+.searchBox:hover > .searchInput {
+  width: 150px;
+  padding: 0 6px;
+}
+}

@@ -7,21 +7,26 @@
     <section>
       <h1 id="temperature"></h1>
       <link rel="stylesheet" type="text/css" href="css/class.css">
+      <link rel="stylesheet" type="text/css" href="css/style.css">
       <p>
         <button id="temperature-up">+</button>
-        <button id="temperature-down">-</button>
-        <button id="temperature-reset">reset</button>
-        power saving mode is <span id="powersaving-status">on</span>
+        <button id="temperature-down">-</button> <br> <br>
+        <button id="temperature-reset">reset</button> <br>
+        <h4>power saving mode is <span id="powersaving-status">on</span> </h4> <br>
         <button id="powersaving-on">PSM on</button>
         <button id="powersaving-off">PSM off</button>
       </p>
     </section>
     <section>
       <h3> Current temperature in <span id="display-city"></span>: <span id="current-temperature"></span> &#8451.</h3>
-      <form id="select-city">
-        <input id="current-city" type="text" placeholder="Enter a city"></input>
-        <input type="submit"></input>
-      </form>
+      <form class="searchBox" id="select-city">
+        <input class="searchInput"type="text" id="current-city" placeholder="Enter a city">
+        <button class="searchButton" type="submit">
+            <i class="material-icons">
+                City
+            </i>
+          </button>
+      </form>   
     </section>
     <script src="src/jquery.js"></script>
     <script type='text/javascript' src='config.js'></script>

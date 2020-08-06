@@ -3,6 +3,7 @@ $(document).ready(function() {
   /* default city is london on loading */
   displayWeather('London');
   /* */
+  $('#powersaving-on').hide();
   $('#select-city').submit(function(event) {
   event.preventDefault();
   var city = $('#current-city').val();
@@ -27,12 +28,16 @@ $(document).ready(function() {
 
   $('#powersaving-on').on('click', function() {
     thermostat.turnPowerSavingModeOn();
+    $('#powersaving-on').hide();
+    $('#powersaving-off').show();
     $('#powersaving-status').text('on');
     updateTemperature();
   });
 
   $('#powersaving-off').on('click', function() {
     thermostat.turnPowerSavingModeOff();
+    $('#powersaving-off').hide();
+    $('#powersaving-on').show();
     $('#powersaving-status').text('off');
     updateTemperature();
   });

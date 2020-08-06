@@ -1,12 +1,18 @@
 /* CSS For Energy Usage Indicator */
 .low-usage {
   color: green;
+  font-size: 130px;
+  transition: font-size 2s;
 }
 
 .medium-usage {
   color: black;
+  font-size: 150px;
+  transition: font-size 2s;
 }
 
 .high-usage {
   color: red;
+  font-size: 170px;
+  transition: font-size 2s;
 }
