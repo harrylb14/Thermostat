@@ -67,7 +67,8 @@ h3 {
 }
 
 body {
-  background-image: url("/Users/student/Downloads/cool-background.png")
+  background-image: url("./background.png")
+  /*background-image: url("https://media1.tenor.com/images/ca81ab36b699f96a9d3670254564ce5d/tenor.gif?itemid=11850089") */
 }
 
 .searchBox {
