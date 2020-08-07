@@ -4,6 +4,7 @@ gem 'sinatra'
 
 group :test do
   gem 'capybara'
+  gem 'pg'
   gem 'puma'
   gem 'rspec'
   gem 'rubocop', '0.79.0'

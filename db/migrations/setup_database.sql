@@ -1,0 +1,6 @@
+CREATE TABLE data (
+id SERIAL PRIMARY KEY,
+temp INTEGER,
+PSM_status VARCHAR(3),
+search_item VARCHAR(20)
+);
